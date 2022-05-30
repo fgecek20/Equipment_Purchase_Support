@@ -58,6 +58,14 @@
     <Compile Include="FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmNoviZahtjev.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNoviZahtjev.Designer.cs">
+      <DependentUpon>FrmNoviZahtjev.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Djelatnik.cs" />
+    <Compile Include="Models\Zahtjev.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmGlavniIzbornik.resx">
@@ -65,6 +73,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNoviZahtjev.resx">
+      <DependentUpon>FrmNoviZahtjev.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

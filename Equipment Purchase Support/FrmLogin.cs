@@ -8,11 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DBLayer;
+using Equipment_Purchase_Support.Models;
 
 namespace Equipment_Purchase_Support
 {
     public partial class FrmLogin : Form
     {
+
+        public static Djelatnik UlogiraniDjelatnik { get; set; }
 
         public FrmLogin()
         {
@@ -45,6 +48,17 @@ namespace Equipment_Purchase_Support
             if (reader.HasRows)
             {
                 reader.Read();
+
+                UlogiraniDjelatnik = new Djelatnik
+                {
+                    ID = int.Parse(reader["ID_djelatnik"].ToString()),
+                    Ime = reader["Ime"].ToString(),
+                    Prezime = reader["Prezime"].ToString(),
+                    KorisnickoIme = reader["Korisnicko_ime"].ToString(),
+                    Lozinka = reader["Lozinka"].ToString(),
+                    Pozicija = reader["Pozicija"].ToString()
+                };
+
                 FrmGlavniIzbornik frmGlavniIzbornik = new FrmGlavniIzbornik();
                 Hide();
                 frmGlavniIzbornik.ShowDialog();
