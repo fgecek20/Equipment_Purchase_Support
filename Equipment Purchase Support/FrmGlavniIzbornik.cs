@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Equipment_Purchase_Support
 {
-    public partial class Form1 : Form
+    public partial class FrmGlavniIzbornik : Form
     {
-        public Form1()
+        public FrmGlavniIzbornik()
         {
             InitializeComponent();
         }
