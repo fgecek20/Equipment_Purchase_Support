@@ -35,7 +35,7 @@ namespace Equipment_Purchase_Support
             else
             {
                 button_Odobri.Visible = true;
-                button_Odobri.Text = "Azuriraj narudžbe";
+                button_Odobri.Text = "Ažuriraj narudžbe";
                 button_Izvjestaji.Visible = true;
             }
         }
@@ -60,6 +60,12 @@ namespace Equipment_Purchase_Support
         {
             FrmOdobri frmOdobri = new FrmOdobri();
             frmOdobri.ShowDialog();
+        }
+
+        private void button_PopisZahtjeva_Click(object sender, EventArgs e)
+        {
+            FrmPopis frmPopis = new FrmPopis();
+            frmPopis.ShowDialog();
         }
     }
 }

@@ -19,7 +19,7 @@ namespace Equipment_Purchase_Support
         {
             InitializeComponent();
             if (FrmLogin.UlogiraniDjelatnik.Pozicija == "cip")
-                button_ObradiZahtjev.Text = "Ažuriraj zahtjev";
+                button_ObradiZahtjev.Text = "Ažuriraj narudžbu";
         }
 
         private void Odobri_Load(object sender, EventArgs e)

@@ -40,6 +40,24 @@ namespace Equipment_Purchase_Support.Repositories
             return requests;
         }
 
+        public static List<Zahtjev> GetMyRequests()
+        {
+            var requests = new List<Zahtjev>();
+
+            string myname = FrmLogin.UlogiraniDjelatnik.Ime + " " + FrmLogin.UlogiraniDjelatnik.Prezime;
+            string sql = $"SELECT * FROM Zahtjevi WHERE Podnositelj_zahtjeva = '{myname}'";
+            DB.OpenConnection();
+            var reader = DB.GetDataReader(sql);
+            while (reader.Read())
+            {
+                Zahtjev request = CreateObject(reader);
+                requests.Add(request);
+            }
+            reader.Close();
+            DB.CloseConnection();
+            return requests;
+        }
+
         private static Zahtjev CreateObject(SqlDataReader reader)
         {
             int urbroj = int.Parse(reader["Urbroj"].ToString());

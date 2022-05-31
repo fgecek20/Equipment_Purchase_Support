@@ -73,6 +73,7 @@
             this.button_PopisZahtjeva.TabIndex = 3;
             this.button_PopisZahtjeva.Text = "Popis zahtjeva";
             this.button_PopisZahtjeva.UseVisualStyleBackColor = true;
+            this.button_PopisZahtjeva.Click += new System.EventHandler(this.button_PopisZahtjeva_Click);
             // 
             // button_Odobri
             // 

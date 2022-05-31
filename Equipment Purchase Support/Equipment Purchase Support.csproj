@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmDetalji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDetalji.Designer.cs">
+      <DependentUpon>FrmDetalji.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmGlavniIzbornik.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +76,12 @@
     <Compile Include="FrmOdobri2.Designer.cs">
       <DependentUpon>FrmOdobri2.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmPopis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPopis.Designer.cs">
+      <DependentUpon>FrmPopis.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Djelatnik.cs" />
     <Compile Include="Models\Zahtjev.cs" />
     <Compile Include="FrmOdobri.cs">
@@ -81,6 +93,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\ZahtjeviRepository.cs" />
+    <EmbeddedResource Include="FrmDetalji.resx">
+      <DependentUpon>FrmDetalji.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmGlavniIzbornik.resx">
       <DependentUpon>FrmGlavniIzbornik.cs</DependentUpon>
     </EmbeddedResource>
@@ -95,6 +110,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmOdobri2.resx">
       <DependentUpon>FrmOdobri2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPopis.resx">
+      <DependentUpon>FrmPopis.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
