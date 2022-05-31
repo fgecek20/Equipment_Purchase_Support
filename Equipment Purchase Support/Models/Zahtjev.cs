@@ -19,11 +19,18 @@ namespace Equipment_Purchase_Support.Models
         public string VoditeljProjekta { get; set; }
         public string PodnositeljZahtjeva { get; set; }
         public string DatumPodnosenja { get; set; }
-        public bool OdobrenjeVodProj { get; set; }
-        public bool OdobrenjeVodRacun { get; set; }
-        public bool OdobrenjeProdNast { get; set; }
-        public bool StatusPrispijeva { get; set; }
+        public string OdobrenjeVodProj { get; set; }
+        public string OdobrenjeVodRacun { get; set; }
+        public string OdobrenjeProdNast { get; set; }
+        public string StatusPrispijeca { get; set; }
         public string DatumPrispijeca { get; set; }
+
+        public string DetermineStatus(string status)
+        {
+            if(status == "") return "U obradi";
+            else if(status == "False") return "Odbijeno";
+            else return "Prihvaćeno";
+        }
 
     }
 }

@@ -45,5 +45,21 @@ namespace Equipment_Purchase_Support
             FrmNoviZahtjev frmNoviZahtjev = new FrmNoviZahtjev();
             frmNoviZahtjev.ShowDialog();
         }
+
+        private void button_Odjava_Click(object sender, EventArgs e)
+        {
+            FrmLogin.UlogiraniDjelatnik = null;
+            FrmLogin frmLogin = new FrmLogin();
+            Hide();
+            frmLogin.ShowDialog();
+            Close();
+
+        }
+
+        private void button_Odobri_Click(object sender, EventArgs e)
+        {
+            FrmOdobri frmOdobri = new FrmOdobri();
+            frmOdobri.ShowDialog();
+        }
     }
 }

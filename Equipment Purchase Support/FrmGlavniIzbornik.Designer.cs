@@ -82,6 +82,7 @@
             this.button_Odobri.TabIndex = 4;
             this.button_Odobri.Text = "button3";
             this.button_Odobri.UseVisualStyleBackColor = true;
+            this.button_Odobri.Click += new System.EventHandler(this.button_Odobri_Click);
             // 
             // button_Izvjestaji
             // 
@@ -100,6 +101,7 @@
             this.button_Odjava.TabIndex = 6;
             this.button_Odjava.Text = "Odjava";
             this.button_Odjava.UseVisualStyleBackColor = true;
+            this.button_Odjava.Click += new System.EventHandler(this.button_Odjava_Click);
             // 
             // FrmGlavniIzbornik
             // 
