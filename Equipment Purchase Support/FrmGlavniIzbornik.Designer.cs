@@ -93,6 +93,7 @@
             this.button_Izvjestaji.TabIndex = 5;
             this.button_Izvjestaji.Text = "Izvještaji";
             this.button_Izvjestaji.UseVisualStyleBackColor = true;
+            this.button_Izvjestaji.Click += new System.EventHandler(this.button_Izvjestaji_Click);
             // 
             // button_Odjava
             // 

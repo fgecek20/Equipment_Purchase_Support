@@ -67,5 +67,11 @@ namespace Equipment_Purchase_Support
             FrmPopis frmPopis = new FrmPopis();
             frmPopis.ShowDialog();
         }
+
+        private void button_Izvjestaji_Click(object sender, EventArgs e)
+        {
+            FrmIzvjestaji frmIzvjestaji = new FrmIzvjestaji();
+            frmIzvjestaji.ShowDialog();
+        }
     }
 }

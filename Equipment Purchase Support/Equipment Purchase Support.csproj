@@ -58,6 +58,18 @@
     <Compile Include="FrmGlavniIzbornik.Designer.cs">
       <DependentUpon>FrmGlavniIzbornik.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmIzvjestaji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIzvjestaji.Designer.cs">
+      <DependentUpon>FrmIzvjestaji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIzvjestajOBrojuZahtjeva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIzvjestajOBrojuZahtjeva.Designer.cs">
+      <DependentUpon>FrmIzvjestajOBrojuZahtjeva.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +94,7 @@
     <Compile Include="FrmPopis.Designer.cs">
       <DependentUpon>FrmPopis.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\BrojIzvjestaja.cs" />
     <Compile Include="Models\Djelatnik.cs" />
     <Compile Include="Models\Zahtjev.cs" />
     <Compile Include="FrmOdobri.cs">
@@ -92,12 +105,19 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\IzvjestajiRepository.cs" />
     <Compile Include="Repositories\ZahtjeviRepository.cs" />
     <EmbeddedResource Include="FrmDetalji.resx">
       <DependentUpon>FrmDetalji.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmGlavniIzbornik.resx">
       <DependentUpon>FrmGlavniIzbornik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIzvjestaji.resx">
+      <DependentUpon>FrmIzvjestaji.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIzvjestajOBrojuZahtjeva.resx">
+      <DependentUpon>FrmIzvjestajOBrojuZahtjeva.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
